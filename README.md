@@ -1,8 +1,8 @@
-ziggysync
+ziggisync
 =========
 
-ZiggySync will sync your Ziggy with Google Calendar
+ZiggiSync will sync your Ziggi to Google Calendar
 
 It runs on Google scripts (https://script.google.com)
 
-Doesn't support the new version of Ziggy.
+Doesn't support the new version of Ziggi.

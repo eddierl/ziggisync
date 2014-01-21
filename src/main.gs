@@ -150,7 +150,7 @@ function addEvent(json_event){
   var end_date = icaldate(json_event["DTEND"]);
   //RRULE:FREQ=WEEKLY;COUNT=13;
   var recur_count = json_event["RRULE"].split(";")[1].split("=")[1];
-  recur_count=parseInt(recur_count) + WEEKS_END_SHIFT; //ziggy returns 13, but this doesn't match the calendar
+  recur_count=parseInt(recur_count) + WEEKS_END_SHIFT; //ziggi returns 13, but this doesn't match the calendar
   
   var recurrence = CalendarApp.newRecurrence().addWeeklyRule().times(parseInt(recur_count));
   var desc = json_event["DESCRIPTION;ENCODING=QUOTED-PRINTABLE"]
@@ -265,16 +265,16 @@ function checkTrigger(create) {
   return false;
 }
 
-function get_ziggy_email() {
+function get_ziggi_email() {
   return UserProperties.getProperty("email");
 }
 
-function get_ziggy_pass() {
+function get_ziggi_pass() {
   return UserProperties.getProperty("pass");
 }
 
 function main() {
-  ziggy_output = getZiggiParsed(get_ziggy_email(),get_ziggy_pass());
+  ziggi_output = getZiggiParsed(get_ziggi_email(),get_ziggi_pass());
   
   if (UserProperties.getProperty("version") != ScriptProperties.getProperty("version")){
     Logger.log("del events");
@@ -283,7 +283,7 @@ function main() {
   Logger.log("start upgrade");
   upgrade(true);
   Logger.log("start process");
-  proccesEvents(ziggy_output);
+  proccesEvents(ziggi_output);
   if (UserProperties.getProperty("email2") != ""){
     //z_second_email = getZiggiParsed(UserProperties.getProperty("email2"));
     //CALENDAR_NAME = "2מערכת שעות";

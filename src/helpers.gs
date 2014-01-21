@@ -5,7 +5,7 @@ function icaldate(date){
   const date_rex = /(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})/;
   var match_date = date.match(date_rex);
   var format_date = new Date(match_date[1], match_date[2]-1, match_date[3], match_date[4], match_date[5], 0, 0);
-  var finall_data = new Date(format_date.getTime() + (WEEKS_START_SHIFT * (86400000 * 7))); // ziggy returns a shifted data, might be because the war
+  var finall_data = new Date(format_date.getTime() + (WEEKS_START_SHIFT * (86400000 * 7))); // ziggi returns a shifted data, might be because the war
   return finall_data;
 }
 
