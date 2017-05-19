@@ -45,10 +45,6 @@ That's all! :)\n \
 From now on, your Google calendar will be sync once in a hour.\n \
 Want to sync it now? just press the Sync button\n \
 \n \
-PLEASE NOTE : if you're getting an email about \"Authorization is required to perform that action.\". \n \
-Please visit this site again and re-authorize the app, here is a short URL:\n\n \
-http://bit.ly/W42fCU\n\n \
-Eddie.\n\n \
 -------------------------- \n \
 And Hey! \n \
 \n \
@@ -60,8 +56,6 @@ Actually, this is the plan, hopefully everything will run in order.\n \
 \n  \
 This app is kind of a prototype, so things might not work as well as expected.\n \
 If you have any comments, ideas or might even complaints, i'll be happy to hear about it :)\n \
-\n \
-Please email me to edlich6 [AT] gmail [DOT] com\n \
 \n \
 ");
   app.getElementById("currentEmail").setText("Current email is :" + UserProperties.getProperty("email"));
